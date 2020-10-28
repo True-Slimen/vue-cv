@@ -1,0 +1,207 @@
+h3 {
+
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    padding: 0;
+  }
+
+  section{
+    height: 100vh;
+  }
+
+  @keyframes changeView {
+    0% {
+      border-radius: 50% 50% 50% 50%;
+      width: 50px;
+      height: 50px;
+    }
+
+    100% {
+      border-radius: 2% 2% 2% 2%;
+      height: 450px;
+      width: 450px;
+    }
+  }
+
+
+  .viewport {
+    border-radius: 2% 2% 2% 2%;
+    animation: changeView 10s ease-out;
+    background: linear-gradient( #009c2f 20%, #09411a  );
+    background-color: #73ff9d;
+    height: 450px;
+      width: 450px;
+    position: relative;
+    overflow: hidden;
+    transition: all 3s;
+  }
+
+  /* .viewport:hover{
+    transition: all 3s;
+    border-radius: 50% 50% 50% 50%;
+  } */
+
+  .numberFallView{
+    max-height: 450px;
+    margin: 0 auto;
+  }
+
+  .handContainer{
+    position: absolute;
+  }
+
+  .handView{
+    top: 150px
+  }
+
+  .monolithSection{
+    background: linear-gradient( #cee0fa 20%, #546e94 70% );
+    height: 100vh;
+  }
+
+  .monolithWrap{
+    height: 100%;
+  }
+
+  .monolithContainer{
+    position: relative;
+  }
+
+  .monolithImg{
+    height: 100%;
+    position: absolute;
+  }
+
+  .monolithImg img{
+    height: 100%;
+  }
+
+  .shadowmonolith{
+    height: 100%;
+    top: 0;
+  }
+
+  @keyframes moveMonolith {
+    from {
+      top : 0px
+    }
+  
+    to {
+      top: 20px
+    }
+  }
+
+  .monolith{
+    
+    animation: moveMonolith 3s alternate infinite ease-in-out
+    
+  }
+
+  @keyframes moveMediumMonolith {
+    from {
+      top : 15px
+    }
+  
+    to {
+      top: 0px
+    }
+  }
+
+  .moveMediumMonolith{
+    animation: moveMediumMonolith 2s alternate infinite ease-in-out
+    
+  }
+
+  @keyframes moveLightMonolith {
+    from {
+      top : 10px
+    }
+  
+    to {
+      top: 0px
+    }
+  }
+
+  .lightMonolith{
+    animation: moveLightMonolith 1s alternate infinite ease-in-out
+    
+  }
+
+  @keyframes moveVeryLightMonolith {
+    from {
+      top : 5px
+    }
+  
+    to {
+      top: 0px
+    }
+  }
+
+  .veryLightMonolith{
+    animation: moveVeryLightMonolith 0.5s alternate infinite ease-in-out
+    
+  }
+
+  @media (min-width: 1520px){
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1480px;
+    }
+
+  }
+
+
+  @media (max-width: 768px){
+    .monolithContainer{
+      height: 50vh;
+    }
+
+    @keyframes moveMonolith {
+      from {
+        top : 0px
+      }
+    
+      to {
+        top: 10px
+      }
+    }
+  
+    @keyframes moveMediumMonolith {
+      from {
+        top : 7px
+      }
+    
+      to {
+        top: 0px
+      }
+    }
+   
+    @keyframes moveLightMonolith {
+      from {
+        top : 5px
+      }
+    
+      to {
+        top: 0px
+      }
+    }
+  
+    @keyframes moveVeryLightMonolith {
+      from {
+        top : 5px
+      }
+    
+      to {
+        top: 0px
+      }
+    }
+
+  }
+
+  
+
+
